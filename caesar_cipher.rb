@@ -1,9 +1,7 @@
 def caesar_cipher(input, shift_amount)    
     lower = "abcdefghijklmnopqrstuvwxyz".split("")
     upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
-    # input = "Hello!"
     input = input.split("")
-    # shift_amount = 3
 
     output_indices = []
     output = []
@@ -17,7 +15,6 @@ def caesar_cipher(input, shift_amount)
         end    
     end
     output = output.join
-    puts output
 end
 
-caesar_cipher("What a string!", 5)
+puts caesar_cipher("What a string!", 5)
